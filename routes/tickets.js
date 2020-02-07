@@ -5,7 +5,7 @@ var moment = require('moment')
 /* 
 HINT
 
-Use moment library to maniplate datetime
+Use moment library to manipulate datetime
 https://momentjs.com/
 
 */
@@ -26,6 +26,27 @@ router.post('/calculateSettlementAmount', function(req, res, next) {
     res.json({"totalSum": totalSum})
 });
 
+/*
+
+Create API to CRUD function for tickets
+Use NPM sqlite3 save the tickets 
+https://www.npmjs.com/package/sqlite3
+
+Write your own test case on the APIs
+
+Dockerise the nodejs app while ensuring the app process restart itself when it crash
+
+*/
+
+//Custom GET API that will crash the app
+router.get('/crashApp', function(req, res, next) {
+    let totalSum = []
+    while(true){
+        let temp = {"test": 123, "data": [1,2,4,56,23,23,]}
+        totalSum.push(temp)
+    }
+    res.json({"message":"This will not be return as app will crash"})
+});
 
 
 module.exports = router;
