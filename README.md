@@ -80,6 +80,33 @@ For rounding, if the computed total sum is 35.12356, the rounded up computed sum
 
 If the computed total sum is 35.9926, the rouded up computed sum will be 36.00
 
+
+# Assignment 3
+Create 4 Restful API endpoints GET,POST,PUT,DELETE for tickets
+
+Use NPM sqlite3 save the tickets https://www.npmjs.com/package/sqlite3
+
+Data structure of ticket
+```
+{
+  "ticketId":"TES2312-32",
+  "price" , "203.10",
+  "MDR" : "2.0",
+  "currency" : "SGD",
+  "travelAgentName" : "SPLIT-TEST-AGENT01"
+}
+
+```
+
+Write test cases for the APIs you created
+
+# Assignment 4 (Bonus points)
+
+API route tickets/crashApp will cause the app process to crash
+
+Provide a solution to restart the app instance if it crashes. 
+
+
 # Running the project
 
 To run the project:
