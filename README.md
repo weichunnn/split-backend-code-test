@@ -116,4 +116,4 @@ To run the project:
   * To run the tests, use `npm run test` 
 
 # Submission
-Simply put the whole project folder in a `.zip` file and send it to us in an e-mail to `anton@paywithsplit.co` or `marcia@paywithsplit.co`.
+Delete node_modules folder and compress the whole project folder in a `.zip` file and send it to us in an e-mail to `anton@paywithsplit.co` or `marcia@paywithsplit.co`.
