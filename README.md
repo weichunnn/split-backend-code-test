@@ -100,7 +100,7 @@ Data structure of ticket
 
 Write test cases for the APIs you created
 
-# Assignment 4 (Bonus points)
+# Assignment 4
 
 API route tickets/crashApp will cause the app process to crash
 
