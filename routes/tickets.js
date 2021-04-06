@@ -13,32 +13,20 @@ https://momentjs.com/
 router.post('/oneSettlementPerWeek', function(req, res, next) {
     // use req.body to get JSON of start and end dates. We are only concerned with end dates.
     let endDate = moment(req.body['end'],'DD-MM-YYYY')
-    //use day() method to get following day.
-    let paymentDate = moment(endDate.day(8),'DD-MM-YYYY')
-    res.json({"paymentDate":paymentDate.format('DD-MM-YYYY')})
+    
+    //add changes below
+    
+    res.json({"paymentDate":moment().format('DD-MM-YYYY')})
 });
 router.post('/twoSettlementPerWeek', function(req, res, next) {
     let endDate = moment(req.body['end'],'DD-MM-YYYY')
-    if(endDate.day()>=1 && endDate.day()<=3){ 
-        var paymentDate = moment(endDate.day(4),'DD-MM-YYYY')
-    }
-    else{
-        var paymentDate = moment(endDate.day(8),'DD-MM-YYYY') 
-    }
-    res.json({"paymentDate":paymentDate.format('DD-MM-YYYY')})
+
+     //add changes below
+    res.json({"paymentDate":moment().format('DD-MM-YYYY')})
 });
 router.post('/calculateSettlementAmount', function(req, res, next) {
-    var totalSum = 0
-    var ticket_list = req.body
-    for(var ticketno in ticket_list) {
-        ticket = ticket_list[ticketno]
-        totalSum += ticket["price"] * (1 - ticket["MDR"]/100)
-    }
-    //used Ceil function to force round up, and also to eliminate floating point error
-    totalSum = totalSum*100
-    totalSum = Math.ceil(totalSum)
-    totalSum = totalSum/100
-    res.json({"totalSum": totalSum})
+    //add changes below
+    res.json({"totalSum": 123})
 });
 
 
