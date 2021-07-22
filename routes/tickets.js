@@ -144,7 +144,7 @@ Ensure the nodejs app process restart itself when it crash
 
 Solution: 
 - For development env, nodemon is a suitable utility for monitoring changes in codes and automatically 
-restarting the serve to reflect the changes 
+restarting the server in case of changes or crashes
 - For staging and production env, process manager such as PM2 or Forever can keep application up and running on any instances. 
     - Easy to setup
     - Automated restart
